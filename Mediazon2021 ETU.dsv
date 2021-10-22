@@ -1,4 +1,4 @@
-﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="22543aa9-8337-45ef-bbe8-4c40059343ed" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="e3a3485d-8c2f-4e8e-af08-89768bf495b6" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Mediazon2021 ETU</ID>
   <Name>Mediazon2021 ETU</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -477,6 +477,7 @@
                   <xs:element name="email" msprop:design-time-name="43116c73-3846-43a4-bab6-77fdb7a8da39" msprop:DbColumnName="email" msprop:FriendlyName="email" type="xs:string" minOccurs="0" />
                   <xs:element name="language" msprop:design-time-name="de8891f6-d302-4007-aa0c-e0022b66d7e4" msprop:DbColumnName="language" msprop:FriendlyName="language" type="xs:int" minOccurs="0" />
                   <xs:element name="birthdate" msprop:design-time-name="c8292049-ebe6-4131-aed4-e9e75a22ac2a" msprop:DbColumnName="birthdate" msprop:FriendlyName="birthdate" type="xs:dateTime" minOccurs="0" />
+                  <xs:element name="nom" msdata:ReadOnly="true" msprop:Description="" msprop:ComputedColumnExpression="[firstname]+' '+ [lastname]" msprop:IsLogical="True" msprop:design-time-name="3c63aa7f-1cc2-4f44-9d02-4dc88935a220" msprop:DbColumnName="nom" type="xs:string" minOccurs="0" />
                 </xs:sequence>
               </xs:complexType>
             </xs:element>
@@ -884,49 +885,49 @@
           <xs:selector xpath=".//dbo_FaitsCommandes" />
           <xs:field xpath="order_code" />
         </xs:unique>
-        <xs:keyref name="FK_FaitsVenteProduits_OrderDate" refer="dbo_DimTemps_Constraint1">
+        <xs:keyref name="FK_FaitsVenteProduits_DimClient" refer="Constraint1">
           <xs:selector xpath=".//dbo_FaitsVenteProduits" />
-          <xs:field xpath="order_date" />
-        </xs:keyref>
-        <xs:keyref name="FK_FaitsVenteProduits_DimTypesProduits" refer="dbo_DimTypesProduits_Constraint1">
-          <xs:selector xpath=".//dbo_FaitsVenteProduits" />
-          <xs:field xpath="type_id" />
-        </xs:keyref>
-        <xs:keyref name="FK_FaitsVenteProduits_DimEntrepots" refer="dbo_DimEntrepots_Constraint1">
-          <xs:selector xpath=".//dbo_FaitsVenteProduits" />
-          <xs:field xpath="warehouse_id" />
-        </xs:keyref>
-        <xs:keyref name="FK_FaitsVenteProduits_DimDevises" refer="dbo_DimDevises_Constraint1">
-          <xs:selector xpath=".//dbo_FaitsVenteProduits" />
-          <xs:field xpath="currency_id" />
+          <xs:field xpath="customer_id" />
         </xs:keyref>
         <xs:keyref name="FK_FaitsVenteProduits_DimProduits" refer="dbo_DimProduits_Constraint1">
           <xs:selector xpath=".//dbo_FaitsVenteProduits" />
           <xs:field xpath="product_id" />
         </xs:keyref>
-        <xs:keyref name="FK_FaitsVenteProduits_DimClient" refer="Constraint1">
+        <xs:keyref name="FK_FaitsVenteProduits_DimDevises" refer="dbo_DimDevises_Constraint1">
           <xs:selector xpath=".//dbo_FaitsVenteProduits" />
-          <xs:field xpath="customer_id" />
+          <xs:field xpath="currency_id" />
         </xs:keyref>
-        <xs:keyref name="FK_FaitsCommandes_OrderDate" refer="dbo_DimTemps_Constraint1">
-          <xs:selector xpath=".//dbo_FaitsCommandes" />
-          <xs:field xpath="order_date" />
-        </xs:keyref>
-        <xs:keyref name="FK_FaitsCommandes_DimEntrepots" refer="dbo_DimEntrepots_Constraint1">
-          <xs:selector xpath=".//dbo_FaitsCommandes" />
+        <xs:keyref name="FK_FaitsVenteProduits_DimEntrepots" refer="dbo_DimEntrepots_Constraint1">
+          <xs:selector xpath=".//dbo_FaitsVenteProduits" />
           <xs:field xpath="warehouse_id" />
         </xs:keyref>
-        <xs:keyref name="FK_FaitsCommandes_DimClient" refer="Constraint1">
+        <xs:keyref name="FK_FaitsVenteProduits_DimTypesProduits" refer="dbo_DimTypesProduits_Constraint1">
+          <xs:selector xpath=".//dbo_FaitsVenteProduits" />
+          <xs:field xpath="type_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaitsVenteProduits_OrderDate" refer="dbo_DimTemps_Constraint1">
+          <xs:selector xpath=".//dbo_FaitsVenteProduits" />
+          <xs:field xpath="order_date" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaitsCommandes_ShippingDate" refer="dbo_DimTemps_Constraint1">
           <xs:selector xpath=".//dbo_FaitsCommandes" />
-          <xs:field xpath="customer_id" />
+          <xs:field xpath="shipping_date" />
         </xs:keyref>
         <xs:keyref name="FK_FaitsCommandes_DimDevises1" refer="dbo_DimDevises_Constraint1">
           <xs:selector xpath=".//dbo_FaitsCommandes" />
           <xs:field xpath="currency_id" />
         </xs:keyref>
-        <xs:keyref name="FK_FaitsCommandes_ShippingDate" refer="dbo_DimTemps_Constraint1">
+        <xs:keyref name="FK_FaitsCommandes_DimClient" refer="Constraint1">
           <xs:selector xpath=".//dbo_FaitsCommandes" />
-          <xs:field xpath="shipping_date" />
+          <xs:field xpath="customer_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaitsCommandes_DimEntrepots" refer="dbo_DimEntrepots_Constraint1">
+          <xs:selector xpath=".//dbo_FaitsCommandes" />
+          <xs:field xpath="warehouse_id" />
+        </xs:keyref>
+        <xs:keyref name="FK_FaitsCommandes_OrderDate" refer="dbo_DimTemps_Constraint1">
+          <xs:selector xpath=".//dbo_FaitsCommandes" />
+          <xs:field xpath="order_date" />
         </xs:keyref>
         <xs:keyref name="FK_DimTypesProduits_DimTypesProduits" refer="dbo_DimTypesProduits_Constraint1">
           <xs:selector xpath=".//dbo_DimTypesProduits" />
