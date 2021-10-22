@@ -140,7 +140,7 @@
     <Attribute dwd:design-time-name="0fcfecda-230b-4a7a-b734-8edbdd686051">
       <ID>Id</ID>
       <Name>Nom</Name>
-      <Type>Customers</Type>
+      <Type>PersonFullName</Type>
       <Usage>Key</Usage>
       <KeyColumns>
         <KeyColumn dwd:design-time-name="b954d126-0854-4ae0-ade1-6d2d8c65c869">
