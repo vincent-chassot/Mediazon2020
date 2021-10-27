@@ -1,4 +1,4 @@
-﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="fdbb3019-1138-4720-a099-455348d8ab3f" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+﻿<Dimension xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="97f4eaf4-cdcb-41ba-be64-16dd9876dabd" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
   <ID>Entrepots</ID>
   <Name>Entrepots</Name>
   <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
@@ -8,7 +8,7 @@
       <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:DiagramLayout</Name>
       <Value>
         <dds xmlns="">
-          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2935" scrolltop="-4282" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="8911" y="15939" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
+          <diagram fontclsid="{0BE35203-8F91-11CE-9DE3-00AA004BB851}" mouseiconclsid="{0BE35204-8F91-11CE-9DE3-00AA004BB851}" defaultlayout="MSDDS.Rectilinear" defaultlineroute="MSDDS.Rectilinear" version="7" nextobject="8" scale="100" pagebreakanchorx="0" pagebreakanchory="0" pagebreaksizex="0" pagebreaksizey="0" scrollleft="-2935" scrolltop="-4282" gridx="150" gridy="150" marginx="5000" marginy="5000" zoom="100" x="9208" y="15939" backcolor="16777215" defaultpersistence="2" PrintPageNumbersMode="3" PrintMarginTop="0" PrintMarginBottom="635" PrintMarginLeft="0" PrintMarginRight="0" marqueeselectionmode="0" mousepointer="0" snaptogrid="0" autotypeannotation="1" showscrollbars="0" viewpagebreaks="0" donotforceconnectorsbehindshapes="1" backpictureclsid="{00000000-0000-0000-0000-000000000000}">
             <font>
               <ddsxmlobjectstreamwrapper binary="010000009001b0300100065461686f6d61" />
             </font>
@@ -118,66 +118,66 @@
   </Annotations>
   <LastProcessed>0001-01-01T00:00:00Z</LastProcessed>
   <State>Unprocessed</State>
-  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="57ff58bd-96b4-4d99-81a2-3aaad3a56413">
+  <Source xsi:type="DataSourceViewBinding" dwd:design-time-name="17e483dc-1057-4dec-995b-dd15895a439a">
     <DataSourceViewID>Mediazon2021 ETU</DataSourceViewID>
   </Source>
   <UnknownMember>Visible</UnknownMember>
-  <ErrorConfiguration dwd:design-time-name="ec6b7bd3-4fe6-4877-8a3f-cf9ee8d42e87">
+  <ErrorConfiguration dwd:design-time-name="9d8a17bf-dd9d-49bb-8f25-8279f9b9018e">
     <KeyNotFound>ReportAndStop</KeyNotFound>
     <KeyDuplicate>ReportAndStop</KeyDuplicate>
     <NullKeyNotAllowed>ReportAndStop</NullKeyNotAllowed>
   </ErrorConfiguration>
   <CurrentStorageMode>Molap</CurrentStorageMode>
   <Attributes>
-    <Attribute dwd:design-time-name="7938302a-a815-4dcc-879b-1674a13adbb0">
+    <Attribute dwd:design-time-name="f586c0f7-d10f-4d95-9e3a-a8d4c46f3b2e">
       <ID>Id</ID>
       <Name>Entrepot</Name>
       <Usage>Key</Usage>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="fa46db79-c112-4723-9d7a-e5d945e712e5">
+        <KeyColumn dwd:design-time-name="05a46031-b00c-49cf-aa1f-3d44b4a2ffb2">
           <DataType>Integer</DataType>
           <NullProcessing>UnknownMember</NullProcessing>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="a86ca938-ca4f-4f12-bc87-184bdb1a369e">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="248443fb-0e43-4aaa-9e4b-cc6f709c9534">
             <TableID>dbo_DimEntrepots</TableID>
             <ColumnID>id</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="16b8bb53-596c-437d-b45a-fcd06199ed9c">
+      <NameColumn dwd:design-time-name="f22ceeed-fae8-47e1-a221-b79bbf43318e">
         <DataType>WChar</DataType>
         <DataSize>25</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="c097a678-8f7e-47bb-baed-697970c6844b">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="a60671ae-1530-4689-8c2b-95792d1cee09">
           <TableID>dbo_DimEntrepots</TableID>
           <ColumnID>name</ColumnID>
         </Source>
       </NameColumn>
       <AttributeRelationships>
-        <AttributeRelationship dwd:design-time-name="23262db5-01b5-4803-8347-7f790a4d9cfc">
+        <AttributeRelationship dwd:design-time-name="93458e02-a522-4ca5-93b9-8600a2aee6ad">
           <AttributeID>Country</AttributeID>
+          <RelationshipType>Rigid</RelationshipType>
           <Name>Pays</Name>
         </AttributeRelationship>
       </AttributeRelationships>
-      <AttributeHierarchyVisible>false</AttributeHierarchyVisible>
       <ddl200:ProcessingState>Unprocessed</ddl200:ProcessingState>
       <ddl300:AttributeHierarchyProcessingState>Unprocessed</ddl300:AttributeHierarchyProcessingState>
     </Attribute>
-    <Attribute dwd:design-time-name="f38e24fb-4d96-467a-b658-b50008c8ee10">
+    <Attribute dwd:design-time-name="8aa5764e-1d06-4137-958f-81d13e1648cb">
       <ID>Country</ID>
       <Name>Pays</Name>
       <KeyColumns>
-        <KeyColumn dwd:design-time-name="5a8c01fd-a422-4f9f-be35-273e974196b2">
+        <KeyColumn dwd:design-time-name="dabbc47a-58d6-4161-88ed-295f67243d84">
           <DataType>WChar</DataType>
           <DataSize>2</DataSize>
-          <Source xsi:type="ColumnBinding" dwd:design-time-name="56b6de35-3e5e-478c-8831-a95f736634f4">
+          <Source xsi:type="ColumnBinding" dwd:design-time-name="be164a0f-c473-4383-a2ad-2c9e50261334">
             <TableID>dbo_DimGeographie</TableID>
             <ColumnID>country</ColumnID>
           </Source>
         </KeyColumn>
       </KeyColumns>
-      <NameColumn dwd:design-time-name="5ceab568-0ba4-4080-b341-cc087ee60a7d">
+      <NameColumn dwd:design-time-name="f03a2a4e-28b9-48d5-a744-fe0e25b62868">
         <DataType>WChar</DataType>
         <DataSize>2</DataSize>
-        <Source xsi:type="ColumnBinding" dwd:design-time-name="7b75b291-a5fd-4023-aa39-196c958c9664">
+        <Source xsi:type="ColumnBinding" dwd:design-time-name="61555772-c923-40b0-afd9-70b65e011e6b">
           <TableID>dbo_DimGeographie</TableID>
           <ColumnID>country</ColumnID>
         </Source>
@@ -188,16 +188,16 @@
     </Attribute>
   </Attributes>
   <Hierarchies>
-    <Hierarchy dwd:design-time-name="b46dad66-61d2-4048-9364-9d921ea9e587">
+    <Hierarchy dwd:design-time-name="db831071-c7ec-495e-af93-3dda31321708">
       <ID>Hierarchy</ID>
       <Name>Pays Entrepot</Name>
       <Levels>
-        <Level dwd:design-time-name="780c326d-106e-4098-85b6-4b2911369125">
+        <Level dwd:design-time-name="a8d1a474-3e63-4850-bd28-5cf01f379900">
           <ID>Pays</ID>
           <Name>Pays</Name>
           <SourceAttributeID>Country</SourceAttributeID>
         </Level>
-        <Level dwd:design-time-name="175d22a9-c55c-4ddc-8c51-187882a9b5bc">
+        <Level dwd:design-time-name="049ca140-df4b-436b-934b-6ac09b2f1f86">
           <ID>Entrepot</ID>
           <Name>Entrepot</Name>
           <SourceAttributeID>Id</SourceAttributeID>
